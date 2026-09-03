@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | La Frontera Citizens</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:#0b0b0b;
+      color:#f5f1e8;
+      line-height:1.6;
+    }
+
+    header{
+      background:#101010;
+      border-bottom:1px solid #333;
+      padding:18px 20px;
+    }
+
+    nav{
+      max-width:1100px;
+      margin:auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .logo{
+      font-weight:900;
+      color:#d8b75d;
+      font-size:20px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 8px;
+      font-size:14px;
+    }
+
+    .hero{
+      padding:70px 22px 45px;
+      text-align:center;
+      background:linear-gradient(#111,#090909);
+    }
+
+    .hero h1{
+      font-size:46px;
+      margin-bottom:12px;
+    }
+
+    .hero p{
+      max-width:760px;
+      margin:auto;
+      color:#cfc8ba;
+      font-size:18px;
+    }
+
+    section{
+      padding:55px 22px;
+      border-top:1px solid #242424;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:auto;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:20px;
+    }
+
+    .card{
+      background:#151515;
+      border:1px solid #2c2c2c;
+      border-radius:16px;
+      padding:24px;
+    }
+
+    .badge{
+      display:inline-block;
+      padding:6px 10px;
+      border-radius:999px;
+      background:#d8b75d;
+      color:#111;
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:12px;
+    }
+
+    .member{
+      background:#1b1620;
+      border-color:#5a3f69;
+    }
+
+    .member .badge{
+      background:#5a3f69;
+      color:white;
+    }
+
+    .event-date{
+      color:#d8b75d;
+      font-weight:900;
+      font-size:18px;
+    }
+
+    .muted{
+      color:#bdb7ad;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:14px;
+      padding:12px 17px;
+      border-radius:10px;
+      background:#d8b75d;
+      color:#111;
+      font-weight:900;
+      text-decoration:none;
+    }
+
+    .btn.dark{
+      background:transparent;
+      color:#d8b75d;
+      border:1px solid #d8b75d;
+    }
+
+    .notice{
+      background:#101812;
+      border-left:4px solid #2c8f61;
+      padding:18px;
+      border-radius:10px;
+      margin-top:22px;
+    }
+
+    footer{
+      padding:35px 22px;
+      text-align:center;
+      color:#8d8d8d;
+      border-top:1px solid #242424;
+    }
+
+    @media(max-width:800px){
+      .grid{
+        grid-template-columns:1fr;
+      }
+
+      .hero h1{
+        font-size:38px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">LA FRONTERA CITIZENS</div>
+
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">Who We Are</a>
+      <a href="apply.html">Apply</a>
+      <a href="events.html">Events</a>
+      <a href="merch.html">Merchandise</a>
+      <a href="login.html">Member Login</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>La Frontera Events</h1>
+
+  <p>
+    Stay connected through community gatherings, educational events,
+    cultural activities, volunteer opportunities and approved member-only events.
+  </p>
+</section>
+
+<section>
+  <div class="container">
+
+    <h2>Upcoming Public Events</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <span class="badge">PUBLIC EVENT</span>
+
+        <div class="event-date">Date Coming Soon</div>
+
+        <h3>La Frontera Community Meet & Greet</h3>
+
+        <p class="muted">
+          Meet members of the community, learn about La Frontera Citizens,
+          ask questions and hear about upcoming projects.
+        </p>
+
+        <p>
+          <strong>Location:</strong> To Be Announced<br>
+          <strong>Time:</strong> To Be Announced<br>
+          <strong>Capacity:</strong> To Be Announced
+        </p>
+
+        <a class="btn" href="#">RSVP Coming Soon</a>
+      </div>
+
+      <div class="card">
+        <span class="badge">PUBLIC EVENT</span>
+
+        <div class="event-date">Date Coming Soon</div>
+
+        <h3>Community Service Day</h3>
+
+        <p class="muted">
+          A peaceful volunteer event focused on helping the local community
+          through service and neighborhood support.
+        </p>
+
+        <p>
+          <strong>Location:</strong> To Be Announced<br>
+          <strong>Time:</strong> To Be Announced<br>
+          <strong>Capacity:</strong> To Be Announced
+        </p>
+
+        <a class="btn" href="#">Volunteer Registration Coming Soon</a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <h2>Citizen-Only Events</h2>
+
+    <div class="grid">
+
+      <div class="card member">
+        <span class="badge">MEMBERS ONLY</span>
+
+        <div class="event-date">Private Date</div>
+
+        <h3>Citizen Briefing</h3>
+
+        <p class="muted">
+          Approved citizens will receive private organizational updates,
+          community project information and upcoming opportunities.
+        </p>
+
+        <p>
+          Login will be required to view the full event details and RSVP.
+        </p>
+
+        <a class="btn dark" href="login.html">Member Login</a>
+      </div>
+
+      <div class="card member">
+        <span class="badge">MEMBERS ONLY</span>
+
+        <div class="event-date">Private Date</div>
+
+        <h3>Citizen Networking Event</h3>
+
+        <p class="muted">
+          A private networking event for approved La Frontera members
+          focused on lawful business, education and community connections.
+        </p>
+
+        <p>
+          Event location and access information will only be shown to
+          authenticated approved citizens.
+        </p>
+
+        <a class="btn dark" href="login.html">View Member Area</a>
+      </div>
+
+    </div>
+
+    <div class="notice">
+      <strong>Future Admin Feature:</strong>
+      Once this page is connected to Supabase, you will be able to create,
+      edit, publish, cancel and mark events as public or members-only
+      from your private admin dashboard without editing this HTML page.
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <h2>Want to Attend?</h2>
+
+    <p class="muted">
+      Some La Frontera events are open to the public.
+      Private citizen events require an approved La Frontera membership account.
+    </p>
+
+    <a class="btn" href="apply.html">Apply for Membership</a>
+
+  </div>
+</section>
+
+<footer>
+  LaFronteraCitizens.org<br>
+  Con Honor, No Con Miedo.
+</footer>
+
+</body>
+</html>
