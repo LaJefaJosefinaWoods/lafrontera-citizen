@@ -267,6 +267,36 @@ const supabaseClient = supabase.createClient(
   SUPABASE_URL,
   SUPABASE_KEY
 );
+document.getElementById("citizenApplication").addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const form = new FormData(this);
+
+  const application = {
+    full_name: form.get("fullname"),
+    preferred_name: form.get("preferred"),
+    email: form.get("email"),
+    phone: form.get("phone"),
+    city: form.get("city"),
+    state: form.get("state"),
+    is_adult: form.get("age") === "yes",
+    why_join: form.get("whyjoin"),
+    stands_for: form.get("standsfor"),
+    interest: form.get("interest"),
+    status: "Application Received"
+  };
+
+  const { error } = await supabaseClient
+    .from("applications")
+    .insert([application]);
+
+  if (error) {
+    alert("There was a problem submitting your application: " + error.message);
+    return;
+  }
+
+  window.location.href = "welcome.html";
+});
 </script>
 
 </body>
