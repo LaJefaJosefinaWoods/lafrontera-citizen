@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | La Frontera Citizens</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:#0b0b0b;
+      color:#f5f1e8;
+      line-height:1.5;
+    }
+
+    header{
+      background:#101010;
+      border-bottom:1px solid #333;
+      padding:18px 20px;
+    }
+
+    nav{
+      max-width:1150px;
+      margin:auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:18px;
+    }
+
+    .logo{
+      color:#d8b75d;
+      font-weight:900;
+      font-size:20px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 7px;
+      font-size:14px;
+    }
+
+    .hero{
+      padding:48px 22px 30px;
+      background:linear-gradient(#111,#090909);
+    }
+
+    .container{
+      max-width:1150px;
+      margin:auto;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+
+    .card{
+      background:#151515;
+      border:1px solid #2c2c2c;
+      border-radius:16px;
+      padding:22px;
+    }
+
+    .card h3{
+      color:#d8b75d;
+    }
+
+    .number{
+      font-size:34px;
+      font-weight:900;
+      color:#d8b75d;
+    }
+
+    section{
+      padding:40px 22px;
+    }
+
+    label{
+      display:block;
+      font-weight:bold;
+      margin:12px 0 5px;
+    }
+
+    input,
+    textarea,
+    select{
+      width:100%;
+      box-sizing:border-box;
+      padding:13px;
+      border-radius:9px;
+      border:1px solid #3a3a3a;
+      background:#0f0f0f;
+      color:white;
+    }
+
+    textarea{
+      min-height:120px;
+    }
+
+    .btn{
+      display:inline-block;
+      border:none;
+      background:#d8b75d;
+      color:#111;
+      padding:12px 17px;
+      border-radius:9px;
+      font-weight:900;
+      margin-top:12px;
+      cursor:pointer;
+    }
+
+    .notice{
+      margin-top:18px;
+      background:#101812;
+      border-left:4px solid #2c8f61;
+      padding:16px;
+      border-radius:10px;
+    }
+
+    footer{
+      text-align:center;
+      color:#777;
+      padding:30px;
+      border-top:1px solid #222;
+    }
+
+    @media(max-width:850px){
+      .grid{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">LA FRONTERA ADMIN</div>
+
+    <div>
+      <a href="#applications">Applications</a>
+      <a href="#citizens">Citizens</a>
+      <a href="#verification">Verification</a>
+      <a href="#news">News</a>
+      <a href="#events">Events</a>
+      <a href="index.html">Public Site</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Admin Dashboard</h1>
+    <p>
+      Manage La Frontera Citizen applications, verification dates,
+      citizens, events, announcements and member updates.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Pending Applications</h3>
+        <div class="number">0</div>
+        <p>Applications awaiting review.</p>
+      </div>
+
+      <div class="card">
+        <h3>Approved Citizens</h3>
+        <div class="number">0</div>
+        <p>Total active approved members.</p>
+      </div>
+
+      <div class="card">
+        <h3>Verification Requests</h3>
+        <div class="number">0</div>
+        <p>Applicants requesting a verification call.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="verification">
+  <div class="container">
+
+    <div class="card">
+
+      <h2>Next Available Verification Date</h2>
+
+      <p>
+        Eventually you will change this date here and it will automatically
+        update applicant accounts.
+      </p>
+
+      <label>Date</label>
+      <input type="date">
+
+      <label>Time</label>
+      <input type="time">
+
+      <button class="btn" onclick="demoSave()">
+        Save Verification Availability
+      </button>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="news">
+  <div class="container">
+
+    <div class="card">
+
+      <h2>Publish Member Update</h2>
+
+      <label>Title</label>
+      <input type="text" placeholder="Example: September Citizen Update">
+
+      <label>Category</label>
+      <select>
+        <option>Leadership Update</option>
+        <option>Community Project</option>
+        <option>Citizen Benefits</option>
+        <option>Event</option>
+        <option>Opportunity</option>
+        <option>General Announcement</option>
+      </select>
+
+      <label>Message</label>
+      <textarea placeholder="Write your update here..."></textarea>
+
+      <button class="btn" onclick="demoPublish()">
+        Publish to Citizens
+      </button>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="events">
+  <div class="container">
+
+    <div class="card">
+
+      <h2>Create Event</h2>
+
+      <label>Event Name</label>
+      <input type="text">
+
+      <label>Date</label>
+      <input type="date">
+
+      <label>Location</label>
+      <input type="text">
+
+      <label>Access</label>
+      <select>
+        <option>Public</option>
+        <option>Citizens Only</option>
+      </select>
+
+      <label>Event Details</label>
+      <textarea></textarea>
+
+      <button class="btn" onclick="demoEvent()">
+        Publish Event
+      </button>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="applications">
+  <div class="container">
+
+    <div class="card">
+
+      <h2>Application Management</h2>
+
+      <p>
+        New applications will eventually appear here automatically.
+      </p>
+
+      <p>
+        Each record will include:
+      </p>
+
+      <p>
+        Application number • Name • Email • Phone • Date submitted •
+        Verification status • Reviewer notes • Approval decision
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="citizens">
+  <div class="container">
+
+    <div class="card">
+
+      <h2>Citizen Registry</h2>
+
+      <p>
+        Search and manage approved citizen accounts here.
+      </p>
+
+      <input type="search" placeholder="Search name or citizen number">
+
+      <div class="notice">
+        When Supabase is connected, this dashboard will use your real database.
+        You will be able to type updates, change dates and manage applications
+        without editing GitHub code.
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  Private La Frontera Administrative Dashboard
+</footer>
+
+<script>
+function demoSave(){
+  alert("Demo only. Supabase will make this save to the real database.");
+}
+
+function demoPublish(){
+  alert("Demo only. Supabase will publish this to the citizen portal.");
+}
+
+function demoEvent(){
+  alert("Demo only. Supabase will save and publish this event.");
+}
+</script>
+
+</body>
+</html>
