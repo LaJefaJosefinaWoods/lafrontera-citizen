@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Applicant Portal | La Frontera Citizens</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:#0b0b0b;
+      color:#f5f1e8;
+      line-height:1.6;
+    }
+
+    header{
+      background:#101010;
+      border-bottom:1px solid #333;
+      padding:18px 20px;
+    }
+
+    nav{
+      max-width:1100px;
+      margin:auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .logo{
+      font-weight:900;
+      color:#d8b75d;
+      font-size:20px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 8px;
+      font-size:14px;
+    }
+
+    .hero{
+      padding:60px 22px 35px;
+      text-align:center;
+      background:linear-gradient(#111,#090909);
+    }
+
+    .hero h1{
+      font-size:42px;
+      margin-bottom:10px;
+    }
+
+    section{
+      padding:45px 22px 70px;
+    }
+
+    .container{
+      max-width:1000px;
+      margin:auto;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:20px;
+    }
+
+    .card{
+      background:#151515;
+      border:1px solid #2c2c2c;
+      border-radius:16px;
+      padding:24px;
+    }
+
+    .status{
+      display:inline-block;
+      padding:7px 12px;
+      border-radius:999px;
+      background:#3a3118;
+      color:#e7c966;
+      font-size:12px;
+      font-weight:900;
+    }
+
+    .green{
+      color:#64c58f;
+    }
+
+    .gold{
+      color:#d8b75d;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:14px;
+      padding:12px 17px;
+      border-radius:10px;
+      background:#d8b75d;
+      color:#111;
+      font-weight:900;
+      text-decoration:none;
+      border:none;
+      cursor:pointer;
+    }
+
+    .notice{
+      margin-top:20px;
+      padding:17px;
+      background:#101812;
+      border-left:4px solid #2c8f61;
+      border-radius:10px;
+    }
+
+    footer{
+      padding:35px 22px;
+      text-align:center;
+      color:#8d8d8d;
+      border-top:1px solid #242424;
+    }
+
+    @media(max-width:800px){
+      .grid{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">LA FRONTERA APPLICANT PORTAL</div>
+
+    <div>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="login.html">Logout</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Your Application</h1>
+  <p>Your La Frontera membership application and verification status.</p>
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="grid">
+
+      <div class="card">
+        <span class="status">APPLICATION RECEIVED</span>
+
+        <h2>Application Status</h2>
+
+        <p>
+          <strong>Application Number:</strong>
+          <span class="gold">LF-APPLICATION-PENDING</span>
+        </p>
+
+        <p>
+          <strong>Status:</strong>
+          Awaiting Verification
+        </p>
+
+        <p>
+          <strong>Date Submitted:</strong>
+          Will appear here automatically
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Next Available Verification</h2>
+
+        <p class="green">
+          Your next available verification date will appear here.
+        </p>
+
+        <p>
+          Once verification requests are open, you may request a call with
+          an authorized La Frontera reviewer.
+        </p>
+
+        <button class="btn" onclick="requestCall()">
+          Request Verification Call
+        </button>
+      </div>
+
+      <div class="card">
+        <h2>Application Progress</h2>
+
+        <p>✓ Application Submitted</p>
+        <p>○ Verification Requested</p>
+        <p>○ Verification Completed</p>
+        <p>○ Final Review</p>
+        <p>○ Approved / Decision Issued</p>
+      </div>
+
+      <div class="card">
+        <h2>Messages</h2>
+
+        <p>
+          Messages from La Frontera administrators will appear here.
+        </p>
+
+        <p class="gold">
+          No new messages.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="notice">
+      Applicants do not have access to private citizen-only news,
+      internal announcements, citizen benefits, or private events
+      until membership has been approved.
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  LaFronteraCitizens.org<br>
+  Applicant Access Portal
+</footer>
+
+<script>
+function requestCall(){
+  alert(
+    "Verification request feature created. " +
+    "Once connected to Supabase, this button will record the request " +
+    "and show the next available date selected by the La Frontera admin."
+  );
+}
+</script>
+
+</body>
+</html>
