@@ -257,16 +257,16 @@
   Con Honor, No Con Miedo.
 </footer>
 
-<script>
-document.getElementById("citizenApplication").addEventListener("submit", function(e){
-  e.preventDefault();
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
-  alert(
-    "Application form created successfully. " +
-    "Next we will connect this form to Supabase so applications are saved, " +
-    "assigned an application number, and followed by an automatic email."
-  );
-});
+<script>
+const SUPABASE_URL = "https://xtkxplwauauuoptpruze.supabase.co";
+const SUPABASE_KEY = "sb_publishable_mSdsfHJFbzHEAmOVVCvFqQ_CIPr4Upa";
+
+const supabaseClient = supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_KEY
+);
 </script>
 
 </body>
