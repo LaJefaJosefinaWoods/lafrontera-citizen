@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merchandise | La Frontera Citizens</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:#0b0b0b;
+      color:#f5f1e8;
+      line-height:1.6;
+    }
+
+    header{
+      background:#101010;
+      border-bottom:1px solid #333;
+      padding:18px 20px;
+    }
+
+    nav{
+      max-width:1100px;
+      margin:auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .logo{
+      font-weight:900;
+      color:#d8b75d;
+      font-size:20px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 8px;
+      font-size:14px;
+    }
+
+    .hero{
+      padding:70px 22px 45px;
+      text-align:center;
+      background:linear-gradient(#111,#090909);
+    }
+
+    .hero h1{
+      font-size:46px;
+      margin-bottom:12px;
+    }
+
+    .hero p{
+      max-width:760px;
+      margin:auto;
+      color:#cfc8ba;
+      font-size:18px;
+    }
+
+    section{
+      padding:55px 22px;
+      border-top:1px solid #242424;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:auto;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:20px;
+    }
+
+    .card{
+      background:#151515;
+      border:1px solid #2c2c2c;
+      border-radius:16px;
+      padding:22px;
+    }
+
+    .product-image{
+      height:220px;
+      border-radius:12px;
+      background:#202020;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#777;
+      margin-bottom:18px;
+      font-weight:bold;
+    }
+
+    .price{
+      color:#d8b75d;
+      font-size:24px;
+      font-weight:900;
+    }
+
+    .muted{
+      color:#bdb7ad;
+    }
+
+    .badge{
+      display:inline-block;
+      background:#d8b75d;
+      color:#111;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:10px;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:14px;
+      padding:12px 17px;
+      border-radius:10px;
+      background:#d8b75d;
+      color:#111;
+      font-weight:900;
+      text-decoration:none;
+    }
+
+    .notice{
+      margin-top:25px;
+      padding:18px;
+      border-left:4px solid #2c8f61;
+      background:#101812;
+      border-radius:10px;
+    }
+
+    footer{
+      padding:35px 22px;
+      text-align:center;
+      color:#8d8d8d;
+      border-top:1px solid #242424;
+    }
+
+    @media(max-width:800px){
+      .grid{
+        grid-template-columns:1fr;
+      }
+
+      .hero h1{
+        font-size:38px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">LA FRONTERA CITIZENS</div>
+
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">Who We Are</a>
+      <a href="apply.html">Apply</a>
+      <a href="events.html">Events</a>
+      <a href="merch.html">Merchandise</a>
+      <a href="login.html">Member Login</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Official Merchandise</h1>
+
+  <p>
+    Support La Frontera through official apparel, cultural items,
+    citizen merchandise and limited releases.
+  </p>
+</section>
+
+<section>
+  <div class="container">
+
+    <h2>Featured Items</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <div class="product-image">PRODUCT PHOTO</div>
+        <span class="badge">COMING SOON</span>
+        <h3>La Frontera Shirt</h3>
+        <p class="muted">
+          Official La Frontera apparel featuring approved organization branding.
+        </p>
+        <div class="price">$60</div>
+        <a class="btn" href="#">Coming Soon</a>
+      </div>
+
+      <div class="card">
+        <div class="product-image">PRODUCT PHOTO</div>
+        <span class="badge">COMING SOON</span>
+        <h3>La Frontera Hoodie</h3>
+        <p class="muted">
+          Premium heavyweight hoodie for supporters and approved members.
+        </p>
+        <div class="price">$95</div>
+        <a class="btn" href="#">Coming Soon</a>
+      </div>
+
+      <div class="card">
+        <div class="product-image">PRODUCT PHOTO</div>
+        <span class="badge">COMING SOON</span>
+        <h3>La Frontera Cap</h3>
+        <p class="muted">
+          Official embroidered cap featuring La Frontera branding.
+        </p>
+        <div class="price">$36</div>
+        <a class="btn" href="#">Coming Soon</a>
+      </div>
+
+      <div class="card">
+        <div class="product-image">PRODUCT PHOTO</div>
+        <span class="badge">MEMBER ITEM</span>
+        <h3>Citizen Card Holder</h3>
+        <p class="muted">
+          Protective holder designed for approved La Frontera member cards.
+        </p>
+        <div class="price">Coming Soon</div>
+        <a class="btn" href="login.html">Member Login</a>
+      </div>
+
+      <div class="card">
+        <div class="product-image">PRODUCT PHOTO</div>
+        <span class="badge">LIMITED RELEASE</span>
+        <h3>Culture Collection</h3>
+        <p class="muted">
+          Limited cultural and commemorative merchandise released throughout the year.
+        </p>
+        <div class="price">TBA</div>
+        <a class="btn" href="#">Coming Soon</a>
+      </div>
+
+      <div class="card">
+        <div class="product-image">PRODUCT PHOTO</div>
+        <span class="badge">SUPPORT</span>
+        <h3>Community Project Merchandise</h3>
+        <p class="muted">
+          Special products connected to approved community or humanitarian projects.
+        </p>
+        <div class="price">TBA</div>
+        <a class="btn" href="#">Coming Soon</a>
+      </div>
+
+    </div>
+
+    <div class="notice">
+      <strong>Store setup:</strong>
+      We can later connect this page to a real checkout system so you can add
+      products, photos, inventory and prices without editing the website code.
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  LaFronteraCitizens.org<br>
+  Con Honor, No Con Miedo.
+</footer>
+
+</body>
+</html>
