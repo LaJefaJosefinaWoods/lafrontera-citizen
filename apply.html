@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply | La Frontera Citizens</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:#0b0b0b;
+      color:#f5f1e8;
+      line-height:1.6;
+    }
+
+    header{
+      background:#101010;
+      border-bottom:1px solid #333;
+      padding:18px 20px;
+    }
+
+    nav{
+      max-width:1100px;
+      margin:auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .logo{
+      font-weight:900;
+      color:#d8b75d;
+      font-size:20px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 8px;
+      font-size:14px;
+    }
+
+    .hero{
+      padding:65px 22px 35px;
+      text-align:center;
+      background:linear-gradient(#111,#090909);
+    }
+
+    .hero h1{
+      font-size:44px;
+      margin-bottom:12px;
+    }
+
+    .hero p{
+      max-width:760px;
+      margin:auto;
+      color:#cfc8ba;
+    }
+
+    section{
+      padding:45px 22px 70px;
+    }
+
+    .container{
+      max-width:800px;
+      margin:auto;
+    }
+
+    .card{
+      background:#151515;
+      border:1px solid #2c2c2c;
+      border-radius:16px;
+      padding:24px;
+    }
+
+    form{
+      display:grid;
+      gap:16px;
+    }
+
+    label{
+      font-weight:bold;
+      color:#e8e2d5;
+    }
+
+    input,
+    select,
+    textarea{
+      width:100%;
+      box-sizing:border-box;
+      padding:14px;
+      border-radius:10px;
+      border:1px solid #3a3a3a;
+      background:#0f0f0f;
+      color:white;
+      font-size:16px;
+    }
+
+    textarea{
+      min-height:120px;
+      resize:vertical;
+    }
+
+    .notice{
+      background:#101812;
+      border-left:4px solid #2c8f61;
+      padding:16px;
+      border-radius:10px;
+      font-size:14px;
+    }
+
+    .btn{
+      padding:15px 18px;
+      border:none;
+      border-radius:10px;
+      background:#d8b75d;
+      color:#111;
+      font-weight:900;
+      font-size:16px;
+      cursor:pointer;
+    }
+
+    footer{
+      padding:35px 22px;
+      text-align:center;
+      color:#8d8d8d;
+      border-top:1px solid #242424;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">LA FRONTERA CITIZENS</div>
+
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">Who We Are</a>
+      <a href="apply.html">Apply</a>
+      <a href="events.html">Events</a>
+      <a href="merch.html">Merchandise</a>
+      <a href="login.html">Member Login</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Citizen Application</h1>
+
+  <p>
+    Submit your application to begin the La Frontera membership review
+    and verification process.
+  </p>
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="card">
+
+      <form id="citizenApplication">
+
+        <div>
+          <label for="fullname">Full Legal Name</label>
+          <input id="fullname" name="fullname" type="text" required>
+        </div>
+
+        <div>
+          <label for="preferred">Preferred Name</label>
+          <input id="preferred" name="preferred" type="text">
+        </div>
+
+        <div>
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+
+        <div>
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone" type="tel" required>
+        </div>
+
+        <div>
+          <label for="city">City</label>
+          <input id="city" name="city" type="text" required>
+        </div>
+
+        <div>
+          <label for="state">State</label>
+          <input id="state" name="state" type="text" required>
+        </div>
+
+        <div>
+          <label for="age">Are you 18 or older?</label>
+          <select id="age" name="age" required>
+            <option value="">Select one</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="whyjoin">Why do you want to join La Frontera?</label>
+          <textarea id="whyjoin" name="whyjoin" required></textarea>
+        </div>
+
+        <div>
+          <label for="standsfor">What do you believe La Frontera should stand for?</label>
+          <textarea id="standsfor" name="standsfor" required></textarea>
+        </div>
+
+        <div>
+          <label for="interest">Main Community Interest</label>
+          <select id="interest" name="interest" required>
+            <option value="">Choose one</option>
+            <option>Community Service</option>
+            <option>Education</option>
+            <option>Business & Entrepreneurship</option>
+            <option>Culture & Events</option>
+            <option>Humanitarian Projects</option>
+            <option>Professional Development</option>
+          </select>
+        </div>
+
+        <div class="notice">
+          By submitting this application, I understand that “La Frontera Citizen”
+          is a private organizational membership designation only and does not
+          create or replace U.S. citizenship, nationality, immigration status,
+          government identification, diplomatic status, or sovereign legal status.
+        </div>
+
+        <div>
+          <label>
+            <input type="checkbox" required>
+            I agree to the Citizen Code, Terms, and Privacy Policy.
+          </label>
+        </div>
+
+        <button class="btn" type="submit">
+          Submit Citizen Application
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  LaFronteraCitizens.org<br>
+  Con Honor, No Con Miedo.
+</footer>
+
+<script>
+document.getElementById("citizenApplication").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  alert(
+    "Application form created successfully. " +
+    "Next we will connect this form to Supabase so applications are saved, " +
+    "assigned an application number, and followed by an automatic email."
+  );
+});
+</script>
+
+</body>
+</html>
