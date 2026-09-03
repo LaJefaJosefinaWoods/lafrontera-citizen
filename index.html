@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Frontera Citizens</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:#0b0b0b;
+      color:#f5f1e8;
+    }
+
+    header{
+      background:#101010;
+      border-bottom:1px solid #3a3a3a;
+      padding:18px 20px;
+      position:sticky;
+      top:0;
+    }
+
+    nav{
+      max-width:1100px;
+      margin:auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .logo{
+      font-weight:900;
+      font-size:20px;
+      color:#d8b75d;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 8px;
+      font-size:14px;
+    }
+
+    .hero{
+      padding:90px 22px;
+      text-align:center;
+      background:linear-gradient(#111,#080808);
+    }
+
+    .hero h1{
+      font-size:48px;
+      margin-bottom:15px;
+    }
+
+    .hero p{
+      max-width:760px;
+      margin:auto;
+      color:#cfc8ba;
+      font-size:18px;
+      line-height:1.6;
+    }
+
+    .buttons{
+      margin-top:28px;
+      display:flex;
+      justify-content:center;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 20px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:bold;
+      border:1px solid #d8b75d;
+    }
+
+    .gold{
+      background:#d8b75d;
+      color:#111;
+    }
+
+    .dark{
+      color:#d8b75d;
+    }
+
+    section{
+      padding:65px 22px;
+      border-top:1px solid #242424;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:auto;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+      margin-top:25px;
+    }
+
+    .card{
+      background:#151515;
+      border:1px solid #2c2c2c;
+      border-radius:15px;
+      padding:22px;
+    }
+
+    .card h3{
+      color:#d8b75d;
+    }
+
+    .notice{
+      background:#101812;
+      border-left:4px solid #2c8f61;
+      padding:18px;
+      border-radius:10px;
+      margin-top:25px;
+    }
+
+    footer{
+      padding:35px 22px;
+      text-align:center;
+      color:#8d8d8d;
+      border-top:1px solid #242424;
+    }
+
+    @media(max-width:800px){
+      .grid{
+        grid-template-columns:1fr;
+      }
+
+      .hero h1{
+        font-size:38px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">LA FRONTERA CITIZENS</div>
+
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">Who We Are</a>
+      <a href="apply.html">Apply</a>
+      <a href="events.html">Events</a>
+      <a href="merch.html">Merchandise</a>
+      <a href="login.html">Member Login</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Con Honor, No Con Miedo.</h1>
+
+  <p>
+    La Frontera Citizens is a private community membership network focused on
+    culture, education, opportunity, humanitarian work, peaceful community service
+    and lawful entrepreneurship.
+  </p>
+
+  <div class="buttons">
+    <a class="btn gold" href="apply.html">Apply for Citizenship</a>
+    <a class="btn dark" href="login.html">Member Login</a>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <h2>Welcome to La Frontera</h2>
+
+    <p>
+      This platform is the official registration and membership portal for
+      La Frontera Citizens.
+    </p>
+
+    <div class="notice">
+      <strong>Important:</strong>
+      “La Frontera Citizen” means membership in our private organization.
+      It does not replace or create U.S. citizenship, nationality,
+      immigration status or government-issued legal status.
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <h2>Explore La Frontera</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Citizen Application</h3>
+        <p>
+          Apply online and begin the verification process for La Frontera membership.
+        </p>
+        <a class="btn dark" href="apply.html">Apply</a>
+      </div>
+
+      <div class="card">
+        <h3>Events</h3>
+        <p>
+          View public events, community activities and future member-only gatherings.
+        </p>
+        <a class="btn dark" href="events.html">View Events</a>
+      </div>
+
+      <div class="card">
+        <h3>Member Portal</h3>
+        <p>
+          Approved citizens can access private news, announcements,
+          events and membership updates.
+        </p>
+        <a class="btn dark" href="login.html">Login</a>
+      </div>
+
+      <div class="card">
+        <h3>Who We Are</h3>
+        <p>
+          Learn what La Frontera stands for and what we mean by a clean banner.
+        </p>
+        <a class="btn dark" href="about.html">Learn More</a>
+      </div>
+
+      <div class="card">
+        <h3>Merchandise</h3>
+        <p>
+          Explore official La Frontera apparel, cultural items and future releases.
+        </p>
+        <a class="btn dark" href="merch.html">Shop</a>
+      </div>
+
+      <div class="card">
+        <h3>Citizen Benefits</h3>
+        <p>
+          Follow future community programs, opportunities and approved citizen benefits.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <h2>A Clean Banner</h2>
+
+    <p>
+      La Frontera uses the word “cartel” only as a cultural and branding term
+      describing an organized alliance of people and projects.
+    </p>
+
+    <p>
+      La Frontera does not promote or participate in organized crime,
+      trafficking, extortion, violence, weapons activity, intimidation
+      or other illegal conduct.
+    </p>
+
+  </div>
+</section>
+
+<footer>
+  LaFronteraCitizens.org<br>
+  Con Honor, No Con Miedo.
+</footer>
+
+</body>
+</html>
