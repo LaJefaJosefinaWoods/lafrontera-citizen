@@ -193,46 +193,18 @@
     <div class="grid">
 
       <div class="card">
-        <span class="badge">PUBLIC EVENT</span>
+  <span class="badge">EVENTS</span>
 
-        <div class="event-date">Date Coming Soon</div>
+  <h3>No Upcoming Events</h3>
 
-        <h3>La Frontera Community Meet & Greet</h3>
+  <p class="muted">
+    La Frontera Citizens has no public events scheduled for 2026.
+  </p>
 
-        <p class="muted">
-          Meet members of the community, learn about La Frontera Citizens,
-          ask questions and hear about upcoming projects.
-        </p>
-
-        <p>
-          <strong>Location:</strong> To Be Announced<br>
-          <strong>Time:</strong> To Be Announced<br>
-          <strong>Capacity:</strong> To Be Announced
-        </p>
-
-        <a class="btn" href="#">RSVP Coming Soon</a>
-      </div>
-
-      <div class="card">
-        <span class="badge">PUBLIC EVENT</span>
-
-        <div class="event-date">Date Coming Soon</div>
-
-        <h3>Community Service Day</h3>
-
-        <p class="muted">
-          A peaceful volunteer event focused on helping the local community
-          through service and neighborhood support.
-        </p>
-
-        <p>
-          <strong>Location:</strong> To Be Announced<br>
-          <strong>Time:</strong> To Be Announced<br>
-          <strong>Capacity:</strong> To Be Announced
-        </p>
-
-        <a class="btn" href="#">Volunteer Registration Coming Soon</a>
-      </div>
+  <p class="muted">
+    Please check back for future announcements and official updates.
+  </p>
+</div>
 
     </div>
 
@@ -242,75 +214,12 @@
 <section>
   <div class="container">
 
-    <h2>Citizen-Only Events</h2>
+    
 
-    <div class="grid">
-
-      <div class="card member">
-        <span class="badge">MEMBERS ONLY</span>
-
-        <div class="event-date">Private Date</div>
-
-        <h3>Citizen Briefing</h3>
-
-        <p class="muted">
-          Approved citizens will receive private organizational updates,
-          community project information and upcoming opportunities.
-        </p>
-
-        <p>
-          Login will be required to view the full event details and RSVP.
-        </p>
-
-        <a class="btn dark" href="login.html">Member Login</a>
-      </div>
-
-      <div class="card member">
-        <span class="badge">MEMBERS ONLY</span>
-
-        <div class="event-date">Private Date</div>
-
-        <h3>Citizen Networking Event</h3>
-
-        <p class="muted">
-          A private networking event for approved La Frontera members
-          focused on lawful business, education and community connections.
-        </p>
-
-        <p>
-          Event location and access information will only be shown to
-          authenticated approved citizens.
-        </p>
-
-        <a class="btn dark" href="login.html">View Member Area</a>
-      </div>
-
-    </div>
-
-    <div class="notice">
-      <strong>Future Admin Feature:</strong>
-      Once this page is connected to Supabase, you will be able to create,
-      edit, publish, cancel and mark events as public or members-only
-      from your private admin dashboard without editing this HTML page.
-    </div>
-
-  </div>
-</section>
-
-<section>
-  <div class="container">
-
-    <h2>Want to Attend?</h2>
-
-    <p class="muted">
-      Some La Frontera events are open to the public.
-      Private citizen events require an approved La Frontera membership account.
-    </p>
-
-    <a class="btn" href="apply.html">Apply for Membership</a>
-
-  </div>
-</section>
+<footer>
+  LaFronteraCitizens.org<br>
+  Con Honor, No Con Miedo.
+</footer>
 
 <footer>
   LaFronteraCitizens.org<br>
